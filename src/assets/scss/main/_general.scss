@@ -1,0 +1,14 @@
+body {
+  font-family: $kumbh;
+  height: 100vh;
+  background: linear-gradient($gradientViolet 15%, $gradientBlue);
+
+  #root,
+  .App {
+    height: 100%;
+  }
+
+  .App {
+    @include flex-property(center, center);
+  }
+}

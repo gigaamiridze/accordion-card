@@ -1,0 +1,13 @@
+// Importing font
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700&display=swap');
+
+// Importing scss files
+@import './base/reset';
+@import './modules/variables';
+@import './modules/mixins';
+@import './modules/classes';
+@import './main/keyframes';
+@import './main/general';
+@import '../../components/AccordionCard/AccordionCard.module';
+@import '../../components/AccordionItem/AccordionItem.module';
+@import '../../components/Title/Title.module';

@@ -1,0 +1,13 @@
+@keyframes boxHop {
+  from {
+    transform: translate(-55%, -55%);
+  }
+
+  50% {
+    transform: translate(-55%, -57.5%);
+  }
+
+  to {
+    transform: translate(-55%, -55%);
+  }
+}

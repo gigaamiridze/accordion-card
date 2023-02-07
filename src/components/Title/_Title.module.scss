@@ -1,0 +1,7 @@
+@import '../../assets/scss/modules/variables';
+@import '../../assets/scss/modules/mixins';
+
+.title {
+  @include text-property(2.2rem, $bold, $darkBlue, uppercase);
+  margin-bottom: 1.5rem;
+}

@@ -1,0 +1,47 @@
+@import '../../assets/scss/modules/variables';
+@import '../../assets/scss/modules/mixins';
+
+.accordionItem {
+  border-bottom: 1px solid $gray200;
+
+  .questionBox {
+    @include flex-property(space-between, center);
+    height: 48px;
+    cursor: pointer;
+
+    &:hover .question {
+      color: $orange;
+    }
+
+    .question {
+      @include text-property(.9rem, $regular, $gray800, none);
+      @include transition(color, .15s, ease-in-out);
+      line-height: 1.3;
+    }
+
+    .boldWeight {
+      font-weight: $bold;
+    }
+
+    button {
+      width: 42px;
+      height: 100%;
+      background: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 0;
+      @include flex-property(flex-end, center);
+
+      .iconRotate {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .answer {
+    @include text-property(.8rem, $regular, $gray600, none);
+    line-height: 1.3;
+    padding: 0 3rem 1rem 0;
+  }
+}

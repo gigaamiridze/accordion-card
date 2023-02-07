@@ -1,0 +1,33 @@
+@import '../../assets/scss/modules/variables';
+@import '../../assets/scss/modules/mixins';
+@import '../../assets/scss/main/keyframes';
+
+.cardContainer {
+  @include size(925px, 100%, 510px);
+  background-color: $white;
+  border-radius: 24px;
+  @include flex-property(flex-end, center);
+  background: url(../../assets/images/illustration-woman.svg) bottom 3.1rem left -5.1rem no-repeat,
+              url(../../assets/images/bg-pattern.svg) bottom -10rem left -36rem no-repeat;
+  background-color: $white;
+  position: relative;
+
+  &::before {
+    content: "";
+    background: url(../../assets/images/illustration-box.svg) no-repeat;
+    width: 140px;
+    height: 190px;
+    position: absolute;
+    top: 66%;
+    left: -1.6%;
+    transform: translate(-55%, -55%);
+    @include animation(boxHop, 2s, ease-in-out, normal, infinite);
+  }
+
+  .questions {
+    width: 50%;
+    height: 100%;
+    padding-inline: 1.5rem 5.5rem;
+    padding-block: 5rem 3rem;
+  }
+}
